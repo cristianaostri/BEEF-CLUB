@@ -1,0 +1,210 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo estético inspirado en Beef Club */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #e5e5e5;
+  background-color: #0d0d0d;
+  line-height: 1.6;
+}
+
+/* Títulos elegantes con tipografía Serif en h1 y h2 */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #d02525; /* Tono Rojo Premium */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Marca del Header */
+.marca {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #d02525; /* Tono Rojo Premium */
+  letter-spacing: 3px;
+}
+
+/* Contenedor centrado global */
+.contenedor-seccion {
+  width: 90%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* --------------------------------------------------
+   FLEX 1 — HEADER
+-------------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1.8rem 5%;
+  background-color: #050505;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+/* FLEX 2 — NAV UL */
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a3a3a3;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+nav a:hover {
+  color: #d02525; /* Hover Rojo */
+}
+
+/* --------------------------------------------------
+   FLEX 3 — HERO
+-------------------------------------------------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  min-height: 50vh;
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+
+.hero-texto {
+  flex: 1 1 300px;
+}
+
+.hero-texto strong {
+  color: #d02525; /* Destacado en Rojo */
+  font-weight: 600;
+}
+
+.hero img {
+  flex: 0 0 280px;
+  max-width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  border: 1px solid #262626;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------
+   FLEX 4 — CARDS DE PRODUCTOS (Estilo Galería)
+-------------------------------------------------- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 220px;
+  max-width: 250px;
+  background-color: #141414;
+  border: 1px solid #262626;
+  border-top: 3px solid #d02525; /* Borde superior Rojo */
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 0 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #a3a3a3;
+  padding: 0 1rem;
+}
+
+.lista-pasos {
+  padding-left: 1.5rem;
+  color: #d4d4d4;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lista-pasos li {
+  margin-bottom: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+/* --------------------------------------------------
+   FLEX 5 — FOOTER
+-------------------------------------------------- */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 5%;
+  background-color: #050505;
+  color: #737373;
+  margin-top: 5rem;
+  border-top: 1px solid #1a1a1a;
+  font-size: 0.9rem;
+}
+
+#contacto a {
+  color: #d02525; /* Enlaces en Rojo */
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#contacto a:hover {
+  text-decoration: underline;
+}
+
+.enlaces-footer {
+  display: flex;
+  gap: 2rem;
+}
